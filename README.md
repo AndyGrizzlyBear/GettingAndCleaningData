@@ -24,6 +24,24 @@ Content Of "activity_labels.txt":
 
 Content Of "features.txt"
 
+1 tBodyAcc-mean()-X
+
+2 tBodyAcc-mean()-Y
+
+3 tBodyAcc-mean()-Z
+
+4 tBodyAcc-std()-X
+
+5 tBodyAcc-std()-Y
+
+6 tBodyAcc-std()-Z
+
+7 tBodyAcc-mad()-X
+
+8 tBodyAcc-mad()-Y
+
+...
+
  ```{r}
 activityLabels <- read.table("activity_labels.txt")
 activityLabels[,2] <- as.character(activityLabels[,2])
