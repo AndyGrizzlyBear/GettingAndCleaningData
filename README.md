@@ -3,10 +3,25 @@ GettingAndCleaningData, Course Project
 In this project we have the task of turning activity data (sports related)
 into a table. We will be implementing reshape2. A full description of this package is here:
 description: http://seananderson.ca/2013/10/19/reshape.html. We invoke it in the following way:
+```{r}
 library(reshape2)
+```
 
-We get the working directory and set folder with data activity (UCI HAR Dataset) to be the new working directory
+We get the working directory and set folder with data activity (UCI HAR Dataset) to be the new working directory:
+```{r}
+getwd()
+#[1] "/Users/andreamelendezcuesta/Desktop/exdata-data-NEI_data"
+setwd("/Users/andreamelendezcuesta/Desktop/UCI HAR Dataset")
+```
+
 Next we load the files "activity_labels.txt" and "features.txt":
+
+ ```{r}
+activityLabels <- read.table("activity_labels.txt")
+activityLabels[,2] <- as.character(activityLabels[,2])
+features <- read.table("features.txt")
+features[,2] <- as.character(features[,2])
+```
 
                 Content Of "activity_labels.txt":
 
@@ -42,12 +57,6 @@ Next we load the files "activity_labels.txt" and "features.txt":
 
 ...
 
- ```{r}
-activityLabels <- read.table("activity_labels.txt")
-activityLabels[,2] <- as.character(activityLabels[,2])
-features <- read.table("features.txt")
-features[,2] <- as.character(features[,2])
-```
 Later, we extract Only the data related to the mean and the standard deviation
 
  ```{r}
