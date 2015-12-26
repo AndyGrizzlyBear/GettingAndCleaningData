@@ -8,7 +8,7 @@ library(reshape2)
 We get the working directory and set folder with data activity (UCI HAR Dataset) to be the new working directory
 Next we load the files "activity_labels.txt" and "features.txt":
 
-Content Of "activity_labels.txt":
+                Content Of "activity_labels.txt":
 
 1 WALKING
 
@@ -22,7 +22,7 @@ Content Of "activity_labels.txt":
 
 6 LAYING
 
-Content Of "features.txt"
+                Content Of "features.txt"
 
 1 tBodyAcc-mean()-X
 
