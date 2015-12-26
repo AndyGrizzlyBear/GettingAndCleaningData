@@ -1,4 +1,4 @@
-GettingAndCleaningData, Course Project
+Getting And Cleaning Data, Course Project
 
 In this project we have the task of turning activity data (sports related)
 into a table. We will be implementing reshape2. A full description of this package is here:
