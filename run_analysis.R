@@ -1,4 +1,4 @@
-#Details can be found in the README.md file: 
+#Details can be found in the README.md file: https://github.com/AndyGrizzlyBear/GettingAndCleaningData/blob/master/README.md
 #importing library package reshape2
 library(reshape2)
 
